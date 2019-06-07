@@ -1,7 +1,6 @@
 const button = document.querySelectorAll('button');
 const message = document.querySelector('.message');
 const score = document.querySelector('.score');
-message.style.color = 'blue';
 
 const winner = [0, 0];
 
