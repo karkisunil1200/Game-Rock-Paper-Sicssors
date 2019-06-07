@@ -30,9 +30,16 @@ function playGame(event) {
   } else if (result === 'Computer') {
     result += 'Wins';
     winner[1]++;
+  } else {
+    result += ' results in a tie';
   }
 
   score.innerHTML = `Player 1: [ ${winner[0]}] Player 2: [ ${winner[1]}]`;
+  messenger(playerSelection + ' vs ' + computerSelection + '<br><br> ' + result + '</br>');
+}
+
+function messenger(mess) {
+  message.innerHTML = mess;
 }
 
 function checkwinner(player, co) {
